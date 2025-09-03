@@ -1,0 +1,10 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+DB_URL
+
+# Build files
+dist/
+build/
