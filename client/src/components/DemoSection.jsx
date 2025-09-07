@@ -34,7 +34,7 @@ const DemoSection = () => {
 
       console.log("📤 Sending file + jobDescription to backend...");
 
-      const res = await fetch("https://resume-analyzer-eight-beryl.vercel.app/", {
+      const res = await fetch("https://resume-analyzer-eight-beryl.vercel.app/api/resume", {
         method: "POST",
         body: formData,
       });
