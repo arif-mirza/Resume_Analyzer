@@ -1,8 +1,9 @@
 import React from "react";
+import CompImg from "../assets/Icons/undraw_creative-flow_t3kz.svg";
 
 const CompareSection = () => {
   return (
-    <section className="bg-white py-20 px-6 lg:px-8">
+    <section className="bg-white py-40 px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -27,9 +28,9 @@ const CompareSection = () => {
           {/* Right Content - Illustration */}
           <div className="flex justify-center lg:justify-end">
             <img
-              src="./src/assets/Icons/undraw_creative-flow_t3kz.svg"
+              src={CompImg}
               alt="Resume Comparison Illustration"
-              className="w-full max-w-md"
+              className="w-full max-w-md animate-float"
             />
           </div>
         </div>

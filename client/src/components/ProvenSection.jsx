@@ -2,7 +2,7 @@ import React from "react";
 
 const ProvenSection = () => {
   return (
-    <section className="bg-white py-20 px-6 lg:px-8">
+    <section className="bg-white py-32 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
         {/* Main Title */}
         <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-16">

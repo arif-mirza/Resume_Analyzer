@@ -1,5 +1,5 @@
 import React from "react";
-
+import HeroImg from "../assets/Icons/undraw_conference-speaker_kl0d.svg";
 const HeroSection = () => {
   return (
     <section className="bg-[#2D1B69] text-white py-20 px-6 lg:px-8 relative overflow-hidden">
@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8 animate-fade-in">
+          <div className="space-y-8">
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
               Target your resume to a job,{" "}
               <span className="text-[#10B981]">instantly.</span>
@@ -28,7 +28,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-[#10B981] hover:bg-[#059669] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                Target your resume &gt;
+                Target your resume
               </button>
 
               <button className="bg-white text-[#2D1B69] hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
@@ -57,9 +57,10 @@ const HeroSection = () => {
 
           {/* right content */}
         
-          <div className="flex justify-center lg:justify-end animate-fade-in">
+          <div className="flex justify-center lg:justify-end ">
             <img
-              src="./src/assets/Icons/undraw_conference-speaker_kl0d.svg"
+            className="animate-float"
+              src={HeroImg}
               alt=""
             />
           </div>

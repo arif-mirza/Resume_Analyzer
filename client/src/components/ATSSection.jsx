@@ -1,16 +1,16 @@
 import React from 'react';
-
+import AtsImg from '../assets/Icons/undraw_publish-post_7g2z.svg';
 const ATSSection = () => {
   return (
-    <section className="bg-white py-20 px-6 lg:px-8">
+    <section className="bg-white py-40 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content - Illustration */}
           <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <img 
-              src="./src/assets/Icons/undraw_publish-post_7g2z.svg" 
+              src={AtsImg} 
               alt="ATS Illustration" 
-              className="w-full max-w-md animate-fade-in"
+              className="w-full max-w-md animate-float"
             />
           </div>
    

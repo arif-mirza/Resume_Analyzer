@@ -1,8 +1,9 @@
 import React from 'react';
+import ImpPic from '../assets/Icons/undraw_group-project_kow1.svg';
 
 const ImportanceSection = () => {
   return (
-    <section className="bg-white py-20 px-6 lg:px-8">
+    <section className="bg-white py-40 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -25,7 +26,7 @@ const ImportanceSection = () => {
 
           {/* Right Content - Illustration */}
           <div className="flex justify-center lg:justify-end">
-            <img src="./src/assets/Icons/undraw_group-project_kow1.svg" alt="Resume Illustration" className="w-full max-w-md" />
+            <img src={ImpPic} alt="Resume Illustration" className="w-full max-w-md animate-float" />
           </div>
          
         </div>

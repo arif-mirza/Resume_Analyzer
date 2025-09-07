@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ImportanceSection from "./components/ImportanceSection";
@@ -12,9 +12,11 @@ import Footer from "./components/Footer";
 import Layout from "./components/Layout";
 
 const App = () => {
+  const demoRef = useRef();
+
   return (
     <Layout>
-      <Header />
+      <Header demoRef={demoRef} />
       <HeroSection />
 
       <div className="wave-divider">
@@ -41,6 +43,9 @@ const App = () => {
       <CompareSection />
       <ProvenSection />
       <TargetSection />
+
+     
+
       <DemoSection />
       <RelatedResources />
       <Footer />
