@@ -19,13 +19,14 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // middleware
-const corsOptions = {
-  origin: "https://mjresumex.netlify.app", // 👈 yahan apna frontend ka Netlify URL likho
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-};
+// const corsOptions = {
+//   origin: "https://mjresumex.netlify.app", 
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+//   allowedHeaders: ["Content-Type", "Authorization"],
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors({ origin: "*" }));
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
