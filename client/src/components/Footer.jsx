@@ -30,7 +30,7 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Brand Section */}
         <div className="mb-12">
-          <h1 className="text-3xl font-bold text-white mb-2">RESUME WORDED</h1>
+          <h1 className="text-3xl font-bold text-white mb-2">RESUMEX</h1>
           <p className="text-gray-300 text-lg">Get the job you deserve, faster.</p>
         </div>
 
