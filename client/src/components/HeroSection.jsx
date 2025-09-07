@@ -1,7 +1,6 @@
 import React from "react";
 
 const HeroSection = () => {
-  
   return (
     <section className="bg-[#2D1B69] text-white py-20 px-6 lg:px-8 relative overflow-hidden">
       {/* Background Pattern */}
@@ -28,10 +27,7 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                className="bg-[#10B981] hover:bg-[#059669] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-          
-              >
+              <button className="bg-[#10B981] hover:bg-[#059669] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                 Target your resume &gt;
               </button>
 
@@ -59,161 +55,20 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Content - Laptop Mockup */}
-          <div className="relative animate-slide-up">
-            <div className="bg-white rounded-lg p-6 shadow-2xl transform rotate-3 hover:rotate-6 transition-transform duration-500">
-              <div className="bg-gray-100 rounded-lg p-4 space-y-4">
-                {/* Score Circle */}
-                <div className="flex justify-center">
-                  <div className="relative w-24 h-24">
-                    <svg
-                      className="w-24 h-24 transform -rotate-90"
-                      viewBox="0 0 100 100"
-                    >
-                      <circle
-                        cx="50"
-                        cy="50"
-                        r="40"
-                        fill="none"
-                        stroke="#E5E7EB"
-                        strokeWidth="8"
-                      />
-                      <circle
-                        cx="50"
-                        cy="50"
-                        r="40"
-                        fill="none"
-                        stroke="#10B981"
-                        strokeWidth="8"
-                        strokeDasharray="251.2"
-                        strokeDashoffset="78"
-                        strokeLinecap="round"
-                        className="animate-pulse"
-                      />
-                    </svg>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-2xl font-bold text-gray-800">
-                        69
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Content Sections */}
-                <div className="grid grid-cols-3 gap-4 text-sm">
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-gray-800">
-                      YOUR DESCRIPTION
-                    </h4>
-                    <ul className="text-gray-600 space-y-1">
-                      <li>• Software Engineer</li>
-                      <li>• 5+ years experience</li>
-                    </ul>
-                  </div>
-
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-gray-800">YOUR RESUME</h4>
-                    <ul className="text-gray-600 space-y-1">
-                      <li>• React Developer</li>
-                      <li>• 3 years experience</li>
-                    </ul>
-                  </div>
-
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-gray-800">KEYWORDS</h4>
-                    <div className="space-y-1">
-                      <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded text-xs">
-                        JavaScript
-                      </span>
-                      <span className="inline-block bg-red-100 text-red-800 px-2 py-1 rounded text-xs">
-                        Python
-                      </span>
-                      <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded text-xs">
-                        React
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Skills and Experience */}
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">SKILLS</h4>
-                    <div className="space-y-1">
-                      <div className="flex items-center space-x-2">
-                        <svg
-                          className="w-4 h-4 text-green-500"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        <span className="text-gray-600">JavaScript</span>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <svg
-                          className="w-4 h-4 text-red-500"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        <span className="text-gray-600">Python</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">
-                      EXPERIENCE
-                    </h4>
-                    <div className="space-y-1">
-                      <div className="flex items-center space-x-2">
-                        <svg
-                          className="w-4 h-4 text-green-500"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        <span className="text-gray-600">Frontend</span>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <svg
-                          className="w-4 h-4 text-red-500"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        <span className="text-gray-600">Backend</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          {/* right content */}
+        
+          <div className="flex justify-center lg:justify-end animate-fade-in">
+            <img
+              src="./src/assets/Icons/undraw_conference-speaker_kl0d.svg"
+              alt=""
+            />
           </div>
         </div>
+        
       </div>
-    
+      
     </section>
+    
   );
 };
 

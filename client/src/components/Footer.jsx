@@ -6,13 +6,13 @@ const Footer = () => {
 
   return (
     <footer 
-      className="relative bg-[#1e3a8a] text-white py-12 px-6 lg:px-8 overflow-hidden transition-all duration-700 ease-in-out"
+      className="relative bg-[#2D1B69] text-white py-12 px-6 lg:px-8 overflow-hidden transition-all duration-700 ease-in-out"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Background Logo with Animation */}
       <div className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-in-out ${
-        isHovered ? 'opacity-20 scale-110' : 'opacity-0 scale-100'
+        isHovered ? 'opacity-70 scale-130' : 'opacity-0 scale-100'
       }`}>
         <img 
           src={mjLogo} 
@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
 
       {/* Gradient Overlay for Better Text Readability */}
-      <div className={`absolute inset-0 bg-gradient-to-br from-[#1e3a8a]/90 to-[#1e3a8a]/80 transition-opacity duration-700 ${
+      <div className={`absolute inset-0 bg-gradient-to-br from-[#2D1B69]/90 to-[#2D1B69]/80 transition-opacity duration-700 ${
         isHovered ? 'opacity-70' : 'opacity-100'
       }`}></div>
 
@@ -97,8 +97,9 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-600 pt-8 text-center text-gray-300">
-          <p>&copy; 2024 Resume Worded. All rights reserved.</p>
+        <div className="text-center text-gray-300">
+          <p className='font-bold text-gray-400'>&copy; All rights reserved.</p>
+          <p className='font-bold text-gray-400'>Mj Nexus {new Date().getFullYear()}</p>
         </div>
       </div>
     </footer>

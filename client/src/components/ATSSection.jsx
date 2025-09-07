@@ -7,49 +7,13 @@ const ATSSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content - Illustration */}
           <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-            <div className="relative w-80 h-80">
-              {/* Main Person */}
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-                <div className="w-16 h-20 bg-[#8B5CF6] rounded-full"></div>
-                <div className="w-8 h-8 bg-[#8B5CF6] rounded-full absolute -top-2 left-1/2 transform -translate-x-1/2"></div>
-              </div>
-              
-              {/* Large Circular Graph */}
-              <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
-                <div className="w-48 h-48 border-8 border-[#E5E7EB] rounded-full relative">
-                  <div className="absolute inset-0 border-8 border-[#10B981] rounded-full transform rotate-45"></div>
-                  <div className="absolute inset-0 border-8 border-[#8B5CF6] rounded-full transform -rotate-45"></div>
-                  <div className="absolute inset-0 border-8 border-[#F59E0B] rounded-full transform rotate-90"></div>
-                </div>
-              </div>
-              
-              {/* Data Icons */}
-              <div className="absolute top-16 left-8">
-                <div className="w-6 h-6 bg-[#10B981] rounded-lg"></div>
-                <div className="w-2 h-2 bg-[#10B981] rounded-full absolute -top-1 -right-1"></div>
-              </div>
-              
-              <div className="absolute top-20 right-12">
-                <div className="w-4 h-4 bg-[#8B5CF6] rounded-lg"></div>
-                <div className="w-2 h-2 bg-[#8B5CF6] rounded-full absolute -top-1 -left-1"></div>
-              </div>
-              
-              <div className="absolute top-32 left-16">
-                <div className="w-5 h-5 bg-[#F59E0B] rounded-lg"></div>
-                <div className="w-2 h-2 bg-[#F59E0B] rounded-full absolute -top-1 -right-1"></div>
-              </div>
-              
-              <div className="absolute top-28 right-8">
-                <div className="w-3 h-3 bg-[#EF4444] rounded-lg"></div>
-                <div className="w-2 h-2 bg-[#EF4444] rounded-full absolute -top-1 -left-1"></div>
-              </div>
-              
-              {/* Center Data Point */}
-              <div className="absolute top-32 left-1/2 transform -translate-x-1/2">
-                <div className="w-6 h-6 bg-[#2D1B69] rounded-full"></div>
-              </div>
-            </div>
+            <img 
+              src="./src/assets/Icons/undraw_publish-post_7g2z.svg" 
+              alt="ATS Illustration" 
+              className="w-full max-w-md animate-fade-in"
+            />
           </div>
+   
 
           {/* Right Content */}
           <div className="space-y-6 order-1 lg:order-2">
@@ -65,7 +29,7 @@ const ATSSection = () => {
             </p>
             
             <button className="bg-[#2D1B69] hover:bg-[#1E1B4B] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              START YOUR FREE ATS SCAN &gt;
+              START YOUR FREE ATS SCAN
             </button>
           </div>
         </div>

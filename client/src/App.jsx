@@ -1,23 +1,21 @@
-import React from 'react';
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import ImportanceSection from './components/ImportanceSection';
-import ATSSection from './components/ATSSection';
-import CompareSection from './components/CompareSection';
-import ProvenSection from './components/ProvenSection';
-import TargetSection from './components/TargetSection';
-import DemoSection from './components/DemoSection';
-import RelatedResources from './components/RelatedResources';
-import Footer from './components/Footer';
-import Layout from './components/Layout';
+import React from "react";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import ImportanceSection from "./components/ImportanceSection";
+import ATSSection from "./components/ATSSection";
+import CompareSection from "./components/CompareSection";
+import ProvenSection from "./components/ProvenSection";
+import TargetSection from "./components/TargetSection";
+import DemoSection from "./components/DemoSection";
+import RelatedResources from "./components/RelatedResources";
+import Footer from "./components/Footer";
+import Layout from "./components/Layout";
 
 const App = () => {
   return (
     <Layout>
       <Header />
       <HeroSection />
-      <section className="bg-[#2D1B69] py-6 sm:py-6">
-      </section>
 
       <div className="wave-divider">
         <svg
@@ -38,16 +36,12 @@ const App = () => {
         </svg>
       </div>
 
-
-
       <ImportanceSection />
       <ATSSection />
       <CompareSection />
       <ProvenSection />
       <TargetSection />
-      
       <DemoSection />
-      
       <RelatedResources />
       <Footer />
     </Layout>

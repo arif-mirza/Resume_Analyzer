@@ -264,6 +264,9 @@ const DemoSection = () => {
           </div>
         </div>
       )}
+      {/*add svg icon for wave  */}
+      
+      
     </section>
   );
 };

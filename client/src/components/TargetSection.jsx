@@ -18,7 +18,7 @@ const TargetSection = () => {
             </p>
             
             <button className="bg-[#2D1B69] hover:bg-[#1E1B4B] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              TARGET YOUR RESUME TO A JOB DESCRIPTION &gt;
+              TARGET YOUR RESUME TO A JOB DESCRIPTION 
             </button>
           </div>
 
