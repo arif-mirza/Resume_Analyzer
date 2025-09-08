@@ -28,7 +28,7 @@ app.use(
   cors({
    origin: [
   "http://localhost:5173",
-  "https://resume-analyzer-5hv7.vercel.app"
+  "https://mjresumex.vercel.app"
 ],
 
     credentials: true,
