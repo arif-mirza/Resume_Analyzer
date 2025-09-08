@@ -26,7 +26,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "https://resume-analyzer-5hv7.vercel.app/",
+   origin: [
+  "http://localhost:5173",
+  "https://resume-analyzer-5hv7.vercel.app"
+],
+
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -42,12 +46,12 @@ try {
 }
 
 // root route for testing
-// app.get("/", (req, res) => {
-//   res.send("🚀 Resume Analyzer API is running...");
-// });
+app.get("/", (req, res) => {
+  res.send("🚀 Resume Analyzer API is running...");
+});
 
 // routes
-app.use("/", resumeRoutes);
+app.use("/resume", resumeRoutes);
 
 // if (process.env.NODE_ENV !== "production") {
 //   app.listen(port, () => {
@@ -55,8 +59,8 @@ app.use("/", resumeRoutes);
 //   });
 // }
 
-// app.listen(port, () => {
-//   console.log(`🚀 Server running at http://localhost:${port}`);
-// });
+app.listen(port, () => {
+  console.log(`🚀 Server running at http://localhost:${port}`);
+});
 
 export default app;
