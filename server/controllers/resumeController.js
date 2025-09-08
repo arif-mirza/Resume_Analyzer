@@ -19,7 +19,6 @@ export const uploadAndAnalyze = async (req, res) => {
     // Save initial metadata
     let doc = await Resume.create({
       originalName: req.file.originalname,
-      path: req.file.path,
       size: req.file.size,
       mimeType: req.file.mimetype,
     });
@@ -28,12 +27,7 @@ export const uploadAndAnalyze = async (req, res) => {
     // Extract text from PDF using pdf2pic
     let resumeText = "";
     try {
-      if (!fs.existsSync(req.file.path)) {
-        throw new Error(`Uploaded file not found at: ${req.file.path}`);
-      }
-
-      const dataBuffer = await fsp.readFile(req.file.path);
-      const pdfData = await pdf(dataBuffer); // 👈 always pass buffer!
+       const pdfData = await pdf(req.file.buffer); // 👈 use buffer, no fs
       resumeText = pdfData.text;
 
       console.log("✅ Extracted text length:", resumeText.length);
