@@ -59,11 +59,11 @@ app.get("/", (req, res) => {
 app.use("/api/resume", resumeRoutes);
 
 
-if (process.env.NODE_ENV !== "production") {
-  app.listen(port, () => {
-    console.log(`🚀 Server running at http://localhost:${port}`);
-  });
-}
+// if (process.env.NODE_ENV !== "production") {
+//   app.listen(port, () => {
+//     console.log(`🚀 Server running at http://localhost:${port}`);
+//   });
+// }
 
 // app.listen(port, () => {
 //   console.log(`🚀 Server running at http://localhost:${port}`);
