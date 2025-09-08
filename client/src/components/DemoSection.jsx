@@ -34,7 +34,7 @@ const DemoSection = () => {
 
       console.log("📤 Sending file + jobDescription to backend...");
 
-      const res = await fetch("http://localhost:3000/api/resume", {
+      const res = await fetch("http://localhost:3000/", {
         method: "POST",
         body: formData,
       });
