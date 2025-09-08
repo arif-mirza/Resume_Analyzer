@@ -34,11 +34,11 @@ const DemoSection = () => {
 
       console.log("📤 Sending file + jobDescription to backend...");
 
-      const res = await fetch("https://resume-analyzer-delta-black.vercel.app/resume", {
+     const res = await fetch("https://resume-analyzer-theta-ten.vercel.app/resume", {
         method: "POST",
         body: formData,
       });
-
+      
       if (!res.ok) {
         const errText = await res.text();
         console.error("❌ Server error:", errText);

@@ -31,7 +31,7 @@ app.use(
   "http://localhost:5173",
   "https://resume-analyzer-5hv7.vercel.app",
   "https://mjresumex.vercel.app",
-  "https://resume-analyzer-delta-black.vercel.app"
+ " https://resume-analyzer-theta-ten.vercel.app"
   
   
 ],
