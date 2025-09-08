@@ -27,7 +27,7 @@ const DemoSection = () => {
 
     try {
       const formData = new FormData();
-      formData.append("resume", selectedFile); // 👈 must match backend field name
+      formData.append("resume", selectedFile);
       console.log("📤 Appended resume file to formData:", selectedFile.name);
       
       formData.append("jobDescription", jobDescription);
