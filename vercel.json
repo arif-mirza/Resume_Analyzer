@@ -5,8 +5,8 @@
     { "src": "client/package.json", "use": "@vercel/static-build" }
   ],
   "routes": [
-    { "src": "/resume", "dest": "server/index.js" },
-    { "src": "/resume/(.*)", "dest": "server/index.js" },
+    { "src": "/resume", "dest": "/server/index.js" },
+    { "src": "/resume/(.*)", "dest": "/server/index.js" },
     { "src": "/(.*)", "dest": "/client/index.html" }
   ]
 }
