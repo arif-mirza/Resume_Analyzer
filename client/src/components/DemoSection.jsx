@@ -34,7 +34,7 @@ const DemoSection = () => {
 
       console.log("📤 Sending file + jobDescription to backend...");
 
-      const res = await fetch("http://localhost:3000/resume", {
+      const res = await fetch("https://mjresumex.vercel.app/resume", {
         method: "POST",
         body: formData,
       });
