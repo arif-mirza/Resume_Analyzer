@@ -34,7 +34,7 @@ const DemoSection = () => {
 
       console.log("📤 Sending file + jobDescription to backend...");
 
-      const res = await fetch("https://resume-analyzer-alpha-sage.vercel.app/api/resume", {
+      const res = await fetch("http://localhost:3000/api/resume", {
         method: "POST",
         body: formData,
       });
@@ -252,20 +252,9 @@ const DemoSection = () => {
               </div>
             </div>
           )}
-
-          {/* Debug Info (can be removed in production) */}
-          <div className="mt-8 bg-gray-800 text-gray-300 p-4 rounded-lg text-sm">
-            <details>
-              <summary className="cursor-pointer font-medium">🔍 Debug Info</summary>
-              <pre className="whitespace-pre-wrap mt-2 text-xs">
-                {JSON.stringify(result, null, 2)}
-              </pre>
-            </details>
-          </div>
         </div>
       )}
-      {/*add svg icon for wave  */}
-      
+
       
     </section>
   );
