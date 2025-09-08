@@ -19,15 +19,26 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // middleware
+
+const allowedOrigins = [
+  "https://mjresumex.netlify.app",
+  "http://localhost:5173",
+];
+
+
 const corsOptions = {
-  origin: "https://mjresumex.netlify.app",  // Netlify frontend ka domain
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: (origin, callback) => {
+    // Allow no-origin requests (e.g., curl, server-side) and the listed origins
+    if (!origin || allowedOrigins.includes(origin)) return callback(null, true);
+    return callback(new Error("Not allowed by CORS"));
+  },
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
 
 app.use(cors(corsOptions));
 // app.use(cors({ origin: "*" }));
-
+app.options("*", cors(corsOptions));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

@@ -5,7 +5,7 @@ import { uploadAndAnalyze } from "../controllers/resumeController.js";
 const router = express.Router();
 
 // Multer setup (store files in uploads/)
-const upload = multer({ dest: "uploads/" });
+const upload = multer({ dest: "/tmp" });
 
 router.post("/", upload.single("resume"), uploadAndAnalyze);
 
