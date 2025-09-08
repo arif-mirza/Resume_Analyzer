@@ -24,6 +24,7 @@ const port = process.env.PORT || 5000;
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.options("*", cors());
 app.use(
   cors({
    origin: [
@@ -34,6 +35,7 @@ app.use(
   
   
 ],
+
 
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
