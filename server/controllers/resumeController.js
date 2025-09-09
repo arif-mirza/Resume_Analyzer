@@ -26,15 +26,17 @@ export const uploadAndAnalyze = async (req, res) => {
 
     // Extract text from PDF using pdf2pic
     let resumeText = "";
-    try {
-       const pdfData = await pdf(req.file.buffer); // 👈 use buffer, no fs
-      resumeText = pdfData.text;
-
-      console.log("✅ Extracted text length:", resumeText.length);
-      console.log("📝 Preview:", resumeText.slice(0, 200));
-    } catch (err) {
-      console.error("❌ PDF parsing failed:", err.message);
-      resumeText = `Could not extract text. File info: ${req.file.originalname}`;
+    if (req.file && req.file.buffer) {
+      try {
+        const pdfData = await pdf(req.file.buffer);
+        resumeText = pdfData.text;
+      } catch (err) {
+        console.error("❌ PDF parsing failed:", err.message);
+        resumeText = `Could not extract text. File info: ${req.file.originalname}`;
+      }
+    } else {
+      console.warn("⚠️ No file buffer found, skipping PDF parse");
+      resumeText = "No resume file uploaded.";
     }
     // Send to OpenAI
     let analysis;

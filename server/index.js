@@ -56,6 +56,10 @@ app.get("/", (req, res) => {
   res.send("🚀 Resume Analyzer API is running...");
 });
 
+app.get("/api", (req, res) => {
+  res.json({ status: "Backend running ✅" });
+});
+
 // routes
 app.use("/resume", resumeRoutes);
 
